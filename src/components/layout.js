@@ -5,7 +5,8 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import ThemeContext from "../contexts/theme"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -23,8 +24,13 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const theme = useContext(ThemeContext)
+
   return (
-    <>
+    <div
+      className="main-bg"
+      style={{ backgroundColor: theme.backgroundColor, height: "100%" }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -35,13 +41,15 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{ color: theme.text }}>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a style={{ color: theme.primary }} href="https://www.gatsbyjs.org">
+            Gatsby
+          </a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

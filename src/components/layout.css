@@ -198,7 +198,19 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+html,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+.main-bg {
+  transition: background-color 0.5s ease;
+}
+
 body {
+  height: 100%;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
