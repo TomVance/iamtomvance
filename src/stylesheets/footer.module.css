@@ -1,0 +1,19 @@
+.footer {
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: #6a6c6e;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    font-size: 0.8em;
+  }
+}

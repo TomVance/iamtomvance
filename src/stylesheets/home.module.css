@@ -1,0 +1,166 @@
+.page > div {
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.page h1 {
+  font-size: 4.5em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.3;
+  display: inline;
+}
+
+.page .handle {
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+  color: #6a6c6e;
+  margin-top: 10px;
+}
+
+.page .handle a {
+  color: #6a6c6e;
+  text-decoration: none;
+}
+
+.page h1 span {
+  color: #4cb896;
+  font-weight: 700;
+}
+
+.caseStudy {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.caseStudy h2 {
+  font-size: 3em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.caseStudy h2 a {
+  color: inherit;
+}
+
+.caseStudy p {
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+.caseStudyImg {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: rgba(76, 184, 150, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+
+.caseStudyImg img {
+  width: 130%;
+  box-shadow: 0px 0px 32px -11px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 768px) {
+  .page > div {
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+
+  .caseStudy {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 50px;
+  }
+
+  .caseStudy:nth-of-type(even) {
+    flex-direction: row-reverse;
+    margin-right: 0;
+  }
+
+  .caseStudy:nth-of-type(even) .caseStudyImg {
+    margin-left: 50px;
+    margin-right: 0;
+    width: 300px;
+  }
+
+  .caseStudies {
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  .caseStudy .caseStudyImg {
+    width: 300px;
+    padding: 0;
+    height: 300px;
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  .caseStudy .caseStudyContent {
+    flex: 1;
+  }
+
+  .caseStudy h2 {
+    font-size: 2em;
+  }
+
+  .caseStudy p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .page h1 {
+    font-size: 2.5em;
+  }
+
+  .page .handle {
+    margin-top: 30px;
+    font-size: 1em;
+  }
+
+  .page > div {
+    padding: 0 100px 0;
+    margin-bottom: 0;
+  }
+
+  .caseStudy {
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+  .caseStudy .caseStudyImg {
+    margin-right: 130px;
+  }
+
+  .caseStudy:nth-of-type(even) .caseStudyImg {
+    margin-left: 130px;
+  }
+
+  .caseStudy .caseStudyContent h2,
+  .caseStudy .caseStudyContent p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .caseStudy:nth-of-type(even) h2,
+  .caseStudy:nth-of-type(even) p {
+    text-align: right;
+  }
+}
