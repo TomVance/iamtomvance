@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import styles from "../stylesheets/home.module.css"
 
 import carriden from "../images/carriden.webp"
-import ibdrelief from "../images/ibdrelief_mobile.webp"
 
 const IndexPage = () => {
   return (
